@@ -21,5 +21,5 @@ app.listen(port, () => {
 app.engine('handlebars', exphbs.engine('defaultLayout: main'))
 app.set('view engine', 'handlebars')
 
-// route setting
+app.use(express.static('public'))
 
